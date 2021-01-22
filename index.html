@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <nav>
+        <div class="top">
+                <div id="logo"><a href="https://www.etsy.com">Etsy</a></div>
+            <div>
+                <input id="searchbar" type="text">
+            </div>
+            <div>
+                <button type="button"><a href="https://www.etsy.com/signin" target="_blank">Sign in</a></button>
+            </div>
+            <div>
+                <button id="cart" type="button"><a href="https://www.etsy.com/cart?ref=hdr-cart" target="_blank"><i class="fa fa-shopping-cart"></i></a></button>
+            </div>
+        </div>
+        <div class="toplinks">
+            <a href="https://www.etsy.com/featured/gift-guide-valentines-day?ref=vday21_cat_nav">Valentine's Day</a>
+            <a href="https://www.etsy.com/c/jewelry-and-accessories?ref=catnav-10855">Jewelry & Accessories</a>
+            <a href="https://www.etsy.com/c/clothing-and-shoes?ref=catnav-10923">Clothing & Shoes</a>
+            <a href="https://www.etsy.com/c/home-and-living?ref=catnav-891">Home & Living</a>
+            <a href="https://www.etsy.com/c/wedding-and-party?ref=catnav-10983">Wedding & Party</a>
+            <a href="https://www.etsy.com/c/toys-and-entertainment?ref=catnav-11049">Toys & Entertainment</a>
+            <a href="https://www.etsy.com/c/art-and-collectibles?ref=catnav-66">Art & Collectibles</a>
+            <a href="https://www.etsy.com/c/craft-supplies-and-tools?ref=catnav-562">Craft Supplies</a>
+            <a href="https://www.etsy.com/featured/gift-guides">Gifts & Gift Cards</a>
+        </div>
+    </nav>
+<div class="container">
+    <div class="dropdown">
+        <button class="dropbtn"><b>Estimated Arrival</b> Any time <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <input type="radio" id="any-time" onclick="window.location='https://www.etsy.com/search?q=whiskey&explicit=1';">
+            <label for="any-time">Any time</label><br>
+            <input type="radio" id="jan26" onclick="window.location='https://www.etsy.com/search?q=whiskey&explicit=1&ship_to=US&delivery_days=4'">
+            <label for="jan26">By Jan 26</label><br>
+            <input type="radio" id="jan29" onclick="window.location='https://www.etsy.com/search?q=whiskey&explicit=1&ship_to=US&delivery_days=7'">
+            <label for="jan29">By Jan 29</label><br>
+            <input type="radio" id="feb5" onclick="window.location='https://www.etsy.com/search?q=whiskey&explicit=1&ship_to=US&delivery_days=14'">
+            <label for="feb5">By Feb 5</label><br>
+            <input type="radio" id="custom">
+            <label for="custom">Custom date</label><br>
+        </div>
+      </div>
+    <button type="button"><i class="fa fa-sliders"></i> All Filters</button>
+<div id="grid"></div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
