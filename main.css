@@ -142,19 +142,17 @@ nav {
   }
   
   .item {
-    background: white;
-  }
-  
-  .bg {
-    height: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 250px;
     width: 250px;
   }
   
-  .item {
-    white-space: nowrap;
-    overflow: hidden;
+  .item .bg {
+    height: 200px;
+    width: 250px;
   }
-  
+
   .item p {
     white-space: nowrap;
     overflow: hidden;
